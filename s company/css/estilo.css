@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+a{
+    text-decoration: none;
+}
+body,html{
+    width:100%;
+    height: 100%;
+    margin:0;
+    color:#666666;
+    font-size:16px;
+}
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+}
+.slide img{
+    width: 800px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+.manual-btn:hover{
+    background-color: #FFF;
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 800%;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #FFF;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #FFF;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #FFF;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #FFF;
+}
+nav{
+    background-image: url(../imagens/wallpaper\ img.jpg);
+    background-size: cover;
+    position: absolute;
+    width:100%;
+    background-color: black;
+    text-align: left;
+    position:fixed;
+    z-index:1;
+    display: block;
+    
+}
+nav .logo{
+    margin-left: 50px;
+
+}
+nav a{
+    color:#FFFFFF;
+    display:flex;
+    float:left;
+    padding: 0.5% 1.5% 1.5%;
+    margin-top: 1%;
+    letter-spacing: 1.2px;
+    border-top: 3px solid transparent;
+}
+nav a:hover{
+    color: #e06de4;
+    border-color:#561cf5;
+}
+nav li{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 620px;
+}
+header{
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/decima\ tentativa.jpg);
+    background-size: 125%;
+    background-position: center 20%;
+    position:relative;
+    background-attachment: fixed;
+}
+
+section{
+    width:100%;
+    height: 100%;
+    padding-top:6%;
+}
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.borda{
+    width:8%;
+    margin:auto;
+    border-bottom: 2px solid #561cf5;
+    padding-top: 0.3%;
+}
+.subtitulo{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 1%;
+}
+#Categorias article {
+    width:30%;
+    margin-left: 3%;
+    float:left;
+    text-align: center;
+    margin-top: 5%;
+}
+#Lancamentos article{
+    height: 65%;
+    width:30%;
+    margin-left: 3%;
+    float:left;
+    text-align: center;
+    margin-top: 7px;
+    display: block;
+}
+#Lancamentos{
+    background-image: url(../imagens/wallpaper\ img.jpg);
+}
+#Lancamentos img{
+    margin-top: 32%;
+}
+#Lancamentos h2, h3{
+    color: #FFFFFF;
+}
+section input{
+    width: 40%;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: solid thin  rgb(0, 0, 0);
+    
+}
+section input:hover{
+    background-color: #000000;
+    border-color: #ffffff;
+    color: white;
+    transition: 0.3s;
+}
+#marcas article{
+    width:30%;
+    margin-left: 3%;
+    float:left;
+    margin-top: 5%;
+}
+.iconserv{
+    width:180px;
+    height: 185px;
+    background-color: #ffffff;
+    font-size: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40%;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.7s;
+    border: 3px solid;
+    color: #000000;
+}
+.iconserv:hover{
+    transform:scale(360deg);
+    transition: 0.5s;
+    border-radius: 50%;
+    border: 3px solid #000;
+    background-color: #6b3da0;
+}
+#Categorias {
+    background-color: black;
+    color: white;
+}
+.mrc {
+    width: 180px;
+    height: 185px;
+    background-color: #ffffff;
+    font-size: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40%;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.7s;
+    border: 3px solid;
+    color: #000000;
+}
+#marcas h2 {
+    color: #000;
+}
+.mrc:hover {
+    display: flex;
+    width: 100%;
+    border-radius: 16px;
+    border: 3px solid #6b3da0;
+    filter: blur(0);
+    transform: scale(0.8);
+}
+.mrc:hover .text {
+    display: block;
+    color: black;
+    margin-right: 100px;
+}
+.mrc .text {
+    display: none;
+}
+#ten section{
+    width: 23px;
+}
+#ten article{
+    height: 40%;
+    width: 30%;
+    margin-left: 3%;
+    float: left;
+    text-align: center;
+    margin-top: 7px;
+    display: block;
+}
+#ten{
+    background-image: url(../imagens/wallpaper\ img.jpg);
+}
+#ten img{
+    margin-top: 32%;
+}
+.tenis1 img:hover{
+    content: url(../imagens/tenis1-removebg-preview.png);
+    transition: 1.0s;
+}
+.tenis2 img:hover{
+    content: url(../imagens/tenis2-removebg-preview.png);
+    transition: 1.0s;
+}
+.tenis3 img:hover{
+    content: url(../imagens/air_jordan_2-removebg-preview.png);
+    transition: 1.0s;
+}
+.lan1 img:hover{
+    content: url(../imagens/inversion\ verdao\ menor.png);
+}
+.lan2 img:hover{
+    content: url(../imagens/lebron\ feiao\ invertido.png);
+}
+.lan3 img:hover{
+    content: url(../imagens/nike_blue_inversion-removebg-preview.png);
+}
+#ten section input{
+    width: 40%;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: solid thin  rgb(0, 0, 0);
+}
+#ten section input:hover{
+        background-color: #000000;
+        border-color: #ffffff;
+        color: white;
+        transition: 0.3s;
+}
+
+#ten h2, p{
+    color: #FFFFFF;
+}
+#basca article{
+    height: 40%;
+    width:30%;
+    margin-left: 3%;
+    float: left;
+    text-align: center;
+    margin-top: 7px;
+    display: block;
+}
+#basca h2{
+    color: #000;
+}
+
+
+
